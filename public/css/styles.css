@@ -1,0 +1,33 @@
+.bod{
+	height: 500px;
+	width: 1200px;
+	background-color: cyan;
+	margin-left: 30px;
+
+
+	
+}
+.heading{
+	color: purple;
+	text-align: center;
+
+	margin-top: 0px;
+	    margin-left: 266px;
+
+
+}
+body{
+	background-color:cyan ;
+}
+.menu{
+	text-align: left;
+	margin-top: 38px;
+	margin-left: 1099px;
+}
+.meny{
+	margin-left: 1071px;
+}
+footer{
+	margin-left: 30px;
+	margin-top: 5px;
+}

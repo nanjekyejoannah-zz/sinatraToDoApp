@@ -1,0 +1,2 @@
+gem 'shotgun'
+gem 'tux'

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	
+</head>
+<body>
+
+<p>Are you sure you want to delete this task </p>
+<blockquote><p><%= @task.title %></p></blockquote>
+<blockquote><p><%= @task.venue %></p></blockquote>
+<blockquote><p><%= @task.duration %></p></blockquote>
+<blockquote><p><%= @task.datecreated %></p></blockquote>
+
+<form action = "/delete/<%= @task.id %>" method="POST">
+	<input name = "method" type="hidden" value = "delete" />
+	<button type = "submit" class = "" name = "ok">OK</button>
+	<button type = "submit" class = "" name = "cancel">Cancel</button>
+</form>
+
+</body>
+</html>

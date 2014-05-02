@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	<link href = ""rel="stylesheet" type="text/css" href="./public/css/bootstrap.css">
+<link href = ""rel="stylesheet" type="text/css" href="./public/css/styles.css">
+<title>Home</title>
+</head>
+<body>
+
+<div>
+
+	<a href="/new">Add Task </a>
+	<table> <% @tasks.each do |task| %>
+		<th></th>
+		<tr>
+			<td><%= task[:id] %></td>
+			<td><%= task[:title] %></td>
+			<td><%= task[:venue] %></td>
+			<td><%= task[:duration] %></td>
+			<td><%= task[:datecreated] %></td>
+			
+		</tr>
+	</table>
+	<% end %>
+</div>
+
+</body>
+</html>
