@@ -9,17 +9,18 @@
 
 <div class = "bod">
 
-	<a href="/new" class = "btn btn pull-right">Add Task </a>
+	<a href="/new" class="btn btn-primary pull-right">Add Task </a>
 
 	<ul class ="list-unstyled"> <% @tasks.each do |task| %>
 		
 		
 			
-			<li>Task:<%= task[:title] %></li>
-			<li>Venue:<%= task[:venue] %></li>
-			<li>Duration:<%= task[:duration] %></li>
-			<li>Date Created:<%= task[:datecreated] %></li>
-			<li > <a href="" class = "btn btn-danger">Edit Task </a> <a href="/delete" class = "pull-left btn btn-danger">Delete Task </a> </li>
+			<li><b>Task:</b><%= task[:title] %></li>
+			<li><b>Details:</b><%= task[:description] %></li>
+			<li><b>Venue:</b><%= task[:venue] %></li>
+			<li><b>Duration:</b><%= task[:duration] %></li>
+			<li><b>Date Created:</b><%= task[:datecreated] %></li>
+			<li > <a href="" class = "btn btn-info">Edit Task </a> <a href="/delete" class = "pull-left btn btn-danger">Delete Task </a> </li>
 		
 		<% end %>
 	</ul>

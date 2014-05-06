@@ -4,37 +4,36 @@
 	
 </head>
 <body>
+	<div class="bod">
+		<a href="/" class="btn btn pull-right">Back To Tasks </a>
 
-<div class = "bod">
-<form action = "/new" method = "POST" class = "form-horizontal">
-<div class="control-group">
-<label class="control-label" for="task">Task</label>
-<div class="controls">
-<input type="text" id="task" placeholder="task">
-</div>
- 
-</div>
-</div>
+<div class ="form">
+<form action = "/new" method = "POST" class = "">
 
-<div class="control-group">
-<label class="control-label" for="venue">Venue</label>
-<div class="controls">
-<input type="text" id="venue" placeholder="venue">
-</div>
-</div>
+ <div class="form-group field">
+    <label for="task">Task</label>
+    <input type="text" class="form-control"  placeholder="task title" name="title">
+ </div>
+ <div class="form-group field">
+    <label for="description">Description</label>
+    <input type="text" class="form-control"  placeholder="description" name="description">
+ </div>
+ <div class="form-group field">
+    <label for="venue">Venue</label>
+    <input type="text" class="form-control"  placeholder="venue" name="venue">
+ </div>
+ <div class="form-group field">
+    <label for="duration">Duration</label>
+    <input type="text" class="form-control"  placeholder="duration" name="duration">
+ </div>
 
-<div class="control-group">
-<label class="control-label" for="duration">Duration</label>
-<div class="controls">
-<input type="text" id="duration" placeholder="duration">
-</div>
-</div>
-
-<div><button type = "submit" class = "btn btn-default"> Submit </button> </div>
-</div>
-
+ <button type="submit" class="btn btn-primary">submit</button>
 
 </form>
+</div> 
+
+</div>
+</div>
 
 </body>
 </html>

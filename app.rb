@@ -13,7 +13,7 @@ get '/new' do
 	erb:create_task
 end
 post '/new' do 
-	Task.create(:title => params[:title], :venue => params[:venue], :duration => params[:duration], :datecreated => Time.now)
+	Task.create(:title => params[:title], :venue => params[:venue],:description => params[:description], :duration => params[:duration], :datecreated => Time.now)
 	redirect '/'
 end
 
@@ -22,7 +22,7 @@ get '/delete/:id' do
 	erb:delete_task
 end
 
-post '/delete/id' do
+post '/delete/:id' do
 	if params.has_key?("ok")
 		task = Task.first(id => params[:id])
 		task.destroy
